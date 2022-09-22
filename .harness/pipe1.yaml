@@ -1,0 +1,9 @@
+pipeline:
+  name: pipe1
+  identifier: pipe1
+  template:
+    templateRef: pipelin11
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
