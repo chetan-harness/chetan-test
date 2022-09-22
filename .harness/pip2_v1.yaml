@@ -1,0 +1,27 @@
+template:
+  name: pip2
+  identifier: pip2
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ssh
+              identifier: ssh
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "hi"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
