@@ -1,0 +1,32 @@
+template:
+  name: pipelin11
+  type: Pipeline
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: acwad
+                    identifier: acwad
+                    spec:
+                      shell: Bash
+                      onDelegate: true
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo "ok"
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
+          tags: {}
+  identifier: pipelin11
+  versionLabel: v1
