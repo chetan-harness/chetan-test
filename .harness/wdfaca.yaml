@@ -1,0 +1,30 @@
+pipeline:
+  name: wdfaca
+  identifier: wdfaca
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: wesadq
+                  identifier: wesadq
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "aca"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
