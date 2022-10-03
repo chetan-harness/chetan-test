@@ -17,3 +17,9 @@ pipeline:
         template:
           templateRef: account.test1
           versionLabel: v1
+    - stage:
+        name: nakjd
+        identifier: nakjd
+        template:
+          templateRef: account.test2
+          versionLabel: v2
