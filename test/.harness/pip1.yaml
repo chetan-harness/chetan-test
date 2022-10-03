@@ -11,3 +11,9 @@ pipeline:
         template:
           templateRef: teststage
           versionLabel: v1
+    - stage:
+        name: adqaw
+        identifier: adqaw
+        template:
+          templateRef: account.test1
+          versionLabel: v1
