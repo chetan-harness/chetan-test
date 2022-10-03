@@ -1,0 +1,13 @@
+pipeline:
+  name: pip1
+  identifier: pip1
+  projectIdentifier: tempdemo_cks
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: aiygk
+        identifier: aiygk
+        template:
+          templateRef: teststage
+          versionLabel: v1
