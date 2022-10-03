@@ -1,0 +1,26 @@
+template:
+  name: ss1
+  type: Stage
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: acwad
+              identifier: acwad
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "ok"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+  identifier: ss1
+  versionLabel: v1
