@@ -1,0 +1,26 @@
+template:
+  name: s1
+  type: Stage
+  projectIdentifier: Chetan_new_git_x
+  orgIdentifier: default
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: wesadq
+              identifier: wesadq
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "aca"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+  identifier: s1
+  versionLabel: v1
