@@ -1,0 +1,29 @@
+template:
+  name: teststage
+  identifier: teststage
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: tempdemo_cks
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: test111111
+              identifier: test111111
+              type: HarnessApproval
+              timeout: 1d
+              spec:
+                approvalMessage: |-
+                  Please review the following information
+                  and approve the pipeline progression
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups:
+                    - account._account_all_users
+                approverInputs: []
