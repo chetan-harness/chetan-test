@@ -25,7 +25,7 @@ pipeline:
                   variables:
                     - name: ab
                       type: String
-                      value: <+input>
+                      value: <+pipeline.variables.var2>
           environment:
             environmentRef: env
             deployToAll: false
