@@ -24,17 +24,12 @@ pipeline:
                   variables:
                     - name: ab
                       type: String
-                      value: <+input>
+                      value: <+pipeline.variables.var2>
           environment:
             environmentRef: env
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra
-            serviceOverrideInputs:
-              variables:
-                - name: va1
-                  type: String
-                  value: <+input>
           execution:
             steps:
               - step:
@@ -47,7 +42,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo <+serviceVariables.ab>
+                        script: echo <+serviceVariables.va1>>
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
