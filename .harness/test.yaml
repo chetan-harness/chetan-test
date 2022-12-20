@@ -21,6 +21,10 @@ pipeline:
                   artifacts:
                     primary:
                       primaryArtifactRef: a1
+                  variables:
+                    - name: ab
+                      type: String
+                      value: ""
           environment:
             environmentRef: env
             deployToAll: false
