@@ -24,7 +24,7 @@ pipeline:
                   variables:
                     - name: ab
                       type: String
-                      value: <+input>
+                      value: hvb
           environment:
             environmentRef: env
             deployToAll: false
