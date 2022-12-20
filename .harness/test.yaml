@@ -24,17 +24,12 @@ pipeline:
                   variables:
                     - name: ab
                       type: String
-                      value: <+input>
+                      value: lalit
           environment:
             environmentRef: env
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra
-            serviceOverrideInputs:
-              variables:
-                - name: va1
-                  type: String
-                  value: <+input>
           execution:
             steps:
               - step:
