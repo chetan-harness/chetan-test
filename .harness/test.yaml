@@ -31,11 +31,6 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra
-            serviceOverrideInputs:
-              variables:
-                - name: va1
-                  type: String
-                  value: <+input>
           execution:
             steps:
               - step:
