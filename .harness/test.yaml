@@ -21,15 +21,16 @@ pipeline:
                   artifacts:
                     primary:
                       primaryArtifactRef: a1
-                  variables:
-                    - name: ab
-                      type: String
-                      value: <+input>
           environment:
             environmentRef: env
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra
+            serviceOverrideInputs:
+              variables:
+                - name: va1
+                  type: String
+                  value: <+input>
           execution:
             steps:
               - step:
