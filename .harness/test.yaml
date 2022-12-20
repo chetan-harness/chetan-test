@@ -20,8 +20,11 @@ pipeline:
                 spec:
                   artifacts:
                     primary:
-                      primaryArtifactRef: <+input>
-                      sources: <+input>
+                      primaryArtifactRef: a1
+                  variables:
+                    - name: ab
+                      type: String
+                      value: <+input>
           environment:
             environmentRef: env
             deployToAll: false
